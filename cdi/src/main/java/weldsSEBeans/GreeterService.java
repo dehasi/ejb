@@ -1,12 +1,15 @@
-package magic;
-
-import beans.JustGreeter;
+package weldsSEBeans;
 
 import javax.inject.Inject;
 
-public class HelloService {
+public class GreeterService {
     @Inject
     JustGreeter justGreeter;
+
+    public JustGreeter getJustGreeter() {
+        return justGreeter;
+    }
+
     public void doSmth(String param) {
         System.out.println(justGreeter.greet(param));
     }

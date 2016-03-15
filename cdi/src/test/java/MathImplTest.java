@@ -38,6 +38,7 @@ public class MathImplTest {
         assertEquals(5, m.add(2, 3));
     }
 
+    @Test
     public void testSubtract() throws Exception {
         assertEquals(-1, m.subtract(2, 3));
     }

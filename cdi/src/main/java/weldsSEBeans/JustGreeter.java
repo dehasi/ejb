@@ -1,4 +1,4 @@
-package beans;
+package weldsSEBeans;
 
 
 public class JustGreeter {
