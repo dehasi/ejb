@@ -31,4 +31,13 @@
     <servlet-name>doubleBank</servlet-name>
     <url-pattern>/db</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>allBanks</servlet-name>
+    <servlet-class>servlets.AllBanks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>allBanks</servlet-name>
+    <url-pattern>/all</url-pattern>
+  </servlet-mapping>
 </web-app>
