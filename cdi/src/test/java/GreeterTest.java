@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import weldsSEBeans.GreeterService;
 import weldsSEBeans.HelloGreeter;
+import weldsSEBeans.HiGreeter;
 
 import javax.inject.Inject;
 
@@ -19,7 +20,7 @@ public class GreeterTest {
     public static JavaArchive createDeployment() {
 
         return ShrinkWrap.create(JavaArchive.class)
-                .addClasses(HelloGreeter.class, GreeterService.class)
+                .addClasses(HelloGreeter.class, GreeterService.class, HiGreeter.class)
                 .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
     }
 
