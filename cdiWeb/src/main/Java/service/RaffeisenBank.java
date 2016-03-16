@@ -1,7 +1,7 @@
 package service;
 
 
-public class BankOfAmerica implements Bank {
+public class RaffeisenBank implements Bank {
 
     public void withdrawal(String name, int count) {
 
