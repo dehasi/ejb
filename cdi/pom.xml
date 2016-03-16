@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cdiexamples</artifactId>
-    <name>Java SE CDI exmaple</name>
+    <name>Java SE CDI</name>
 
     <!-- The dependency management section is a mechanism for centralizing dependency information -->
     <dependencyManagement>
