@@ -1,4 +1,4 @@
-package service;
+package beans.banks;
 
 public interface Bank {
     void withdrawal(String name, int count);

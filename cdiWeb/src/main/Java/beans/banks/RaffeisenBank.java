@@ -1,6 +1,9 @@
-package service;
+package beans.banks;
 
 
+import javax.inject.Named;
+
+@Named("RaffeisenBank")
 public class RaffeisenBank implements Bank {
 
     public void withdrawal(String name, int count) {

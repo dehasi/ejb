@@ -2,7 +2,8 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<web-app>
+<web-app version="2.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>raffeisen</servlet-name>
@@ -11,5 +12,23 @@
   <servlet-mapping>
     <servlet-name>raffeisen</servlet-name>
     <url-pattern>/raffeisen</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sber</servlet-name>
+    <servlet-class>servlets.SberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sber</servlet-name>
+    <url-pattern>/sber</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>doubleBank</servlet-name>
+    <servlet-class>servlets.DoubleBankServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doubleBank</servlet-name>
+    <url-pattern>/db</url-pattern>
   </servlet-mapping>
 </web-app>

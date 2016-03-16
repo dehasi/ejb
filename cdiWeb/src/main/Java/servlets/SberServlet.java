@@ -1,6 +1,5 @@
 package servlets;
 
-
 import beans.banks.Bank;
 
 import javax.inject.Inject;
@@ -11,10 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class RaffeisenServlet extends HttpServlet {
+public class SberServlet extends HttpServlet {
 
     @Inject
-    @Named("RaffeisenBank")
+    @Named("SberBank")
     Bank bank;
 
     @Override
