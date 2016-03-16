@@ -8,7 +8,7 @@ public class EntryPoint {
         Weld weld = new Weld();
         WeldContainer container = weld.initialize();
         GreeterService service = container.instance().select(GreeterService.class).get();
-        service.doSmth("R2D2");
+        service.doSmth("R2 D2");
         weld.shutdown();
     }
 }
