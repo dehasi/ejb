@@ -3,8 +3,10 @@ package weldsSEBeans;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.enterprise.inject.Alternative;
 
-public class JustGreeter {
+@Alternative
+public class HelloGreeter implements Greetable {
     public String greet(String name) {
         return "Hello " + name + "!";
     }

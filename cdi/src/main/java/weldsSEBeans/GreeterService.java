@@ -4,13 +4,13 @@ import javax.inject.Inject;
 
 public class GreeterService {
     @Inject
-    JustGreeter justGreeter;
+    Greetable greetable;
 
-    public JustGreeter getJustGreeter() {
-        return justGreeter;
+    public Greetable getJustGreeter() {
+        return greetable;
     }
 
     public void doSmth(String param) {
-        System.out.println(justGreeter.greet(param));
+        System.out.println(greetable.greet(param));
     }
 }
