@@ -1,6 +1,8 @@
 package service;
 
 public interface Bank {
-    void withdrawal();
-    void deposit();
+    void withdrawal(String name, int count);
+    void deposit(String name, int count);
+    int balance(String name);
+    String getName();
 }

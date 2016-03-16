@@ -1,14 +1,21 @@
 package service;
 
-/**
- * Created by Rafa on 16.03.2016.
- */
+
 public class BankOfAmerica implements Bank {
-    public void withdrawal() {
+
+    public void withdrawal(String name, int count) {
 
     }
 
-    public void deposit() {
+    public void deposit(String name, int count) {
 
+    }
+
+    public int balance(String name) {
+        return 0;
+    }
+
+    public String getName() {
+        return this.getClass().getSimpleName();
     }
 }
