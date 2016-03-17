@@ -1,7 +1,8 @@
 
 #Java School
 Примеры к лекции по Enterprise JavaBeans
-Работа проерялась на wildfly-9.0.0.Final
+
+(Тестировалось на wildfly-9.0.0.Final)
 ###Java SE CDI
 * простой @Inject в main с помощью **Weld**
 * пример работы аннотаций @PostConstruct, @PreDestroy
@@ -28,6 +29,17 @@
 
 ###Java EE EJB
 * простой @EJB в сервлете
+* unit-тесты с помощью tomee-embedded
 
 #### Задание
-... что нибудь на MDBean и Interceptors
+* @Interceptors, @AroundInvoke, @ExcludeClassInterceptors
+    * Создать бин
+    * Создать interceptor, который будет логировать вызовы функций
+    * Исключить какую-нибудь функцию из interceptor
+* @MessageDriven
+    * не в этой лекции :(
+    * найти quckstart своего любимого EJB-контейнера
+    (мой любимый -  [WildFly](https://github.com/sgilda/wildfly-quickstart))
+    * разрбрася с настройками EJB-контейнера
+    * ...
+    * profit    
