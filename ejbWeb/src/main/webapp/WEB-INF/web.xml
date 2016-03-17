@@ -11,7 +11,15 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Salut</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/s</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>intercept</servlet-name>
+        <servlet-class>servlets.InterceptiorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>intercept</servlet-name>
+        <url-pattern>/i</url-pattern>
+    </servlet-mapping>
 </web-app>
