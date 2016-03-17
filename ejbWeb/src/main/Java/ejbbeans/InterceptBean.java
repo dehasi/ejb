@@ -7,7 +7,7 @@ import javax.interceptor.Interceptors;
 
 @Stateless
 @Interceptors(LoggingInterceptor.class)
-public class SimpleBean {
+public class InterceptBean {
 
     public String sayHello(String name){
         return "Hello " + name;

@@ -1,6 +1,6 @@
 package servlets;
 
-import ejbbeans.SimpleBean;
+import ejbbeans.InterceptBean;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -12,7 +12,7 @@ import java.io.IOException;
 public class InterceptiorServlet extends HttpServlet {
 
     @EJB
-    SimpleBean bean;
+    InterceptBean bean;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
