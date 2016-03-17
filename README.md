@@ -35,8 +35,7 @@
 * @Interceptors, @AroundInvoke, @ExcludeClassInterceptors
     * Создать бин
     * Создать interceptor, который будет логировать вызовы функций
-    * Исключить какую-ниюудь функцию из interceptor
-
+    * Исключить какую-нибудь функцию из interceptor
 * @MessageDriven
     * не в этой лекции :(
     * найти quckstart своего любимого EJB-контейнера
