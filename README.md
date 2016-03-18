@@ -23,13 +23,20 @@
     * Создать еще один банк
     * Создать сервлет, разрулить конфликты
 * @Qualifier
-    * Создать сервлет в котором одновременно два банка
+    * Создать сервлет в котором одновременно два **разных** банка
+    ```java
+    Bank bank1;
+    Bank bank2;
+    ```
 * @Any    
     * Создать сервлет в которам будут оботражаться все доступные банки
+    ```java
+    Colletcion<Bank> banks;
+    ```
 
 ###Java EE EJB
 * простой @EJB в сервлете
-* unit-тесты с помощью tomee-embedded
+* unit-тесты с помощью **tomee-embedded**
 
 #### Задание
 * @Interceptors, @AroundInvoke, @ExcludeClassInterceptors
